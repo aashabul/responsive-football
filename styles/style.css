@@ -62,7 +62,7 @@ nav, nav a, .fas.fa-sign-in-alt, .fas.fa-long-arrow-alt-right{
     Banner style
 ---------------------------------*/
 
-.banner-area, .bottom-area{
+.banner-area{
     display: flex;
     justify-content: space-between;
     width: 960px;
@@ -96,10 +96,22 @@ nav, nav a, .fas.fa-sign-in-alt, .fas.fa-long-arrow-alt-right{
     column-gap: 11px;
 }
 
-.photo-area img{
-    width: 556.01px;
-    height: 438px;
+.photo-area svg:hover #player, #ball{
+    animation: player 1s infinite ease-out;
+    transform-origin: top;
+    transform-box: fill-box;
 }
+
+@keyframes player{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-45px);
+    }
+}
+
+
 
 /* ------------------------------
    player list style
@@ -151,7 +163,51 @@ nav, nav a, .fas.fa-sign-in-alt, .fas.fa-long-arrow-alt-right{
 }
 
 /* ------------------------------
-  Bottom highlightstyle
+  video container style
+---------------------------------*/
+.videos{
+    background-color: white;
+    padding: 80px 0 50px 0;
+}
+
+.video-container{
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.video-title{
+    font-size: 30px;
+    text-align: center;
+}
+
+/* ------------------------------
+  sponsor style
+---------------------------------*/
+.sponsors-area{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 90px 0 40px 0;
+}
+
+.sponsors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.sponsor-list{
+    display: flex;
+    column-gap: 30px;
+}
+
+
+
+/* ------------------------------
+  Bottom highlight style
 ---------------------------------*/
 .highlight-area{
     background-color: white;
