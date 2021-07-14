@@ -303,6 +303,8 @@ footer{
 /* ------------------------------
    Media Query
 ---------------------------------*/
+
+/* for mobile devices */
 @media only screen and (max-width: 688px){
     /* header */
     .menu-area{
@@ -336,12 +338,6 @@ footer{
     .photo-area svg{
         width: 300px;
     }
-
-    /* .container {
-        margin-top: 100px;
-        display: flex;
-        align-items: center;
-    } */
 
     /* player section */
     .players {
@@ -408,5 +404,37 @@ footer{
     .logo img{
         width: 250px;
         height: 80px;
+    }
+}
+
+/* for tablets */
+@media only screen and (min-width: 767px) and (max-width:1024px){
+    /* body */
+    body{
+        overflow-x: hidden;
+    }
+    /* banner */
+    .banner-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    /* player section */
+    .player-list .players {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 27px;
+    }
+    /* video section */
+    .video-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 15px;
+    }
+    /* highlight section */
+    .highlights{
+        flex-direction: column;
+        align-items: center;
     }
 }
