@@ -101,7 +101,7 @@ nav, nav a, .fas.fa-sign-in-alt, .fas.fa-long-arrow-alt-right{
 }
 
 .photo-area svg:hover #player, #ball{
-    animation: player 1s infinite ease-out;
+    animation: player 2s infinite ease-out;
     transform-origin: top;
     transform-box: fill-box;
 }
