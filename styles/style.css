@@ -351,6 +351,10 @@ footer{
 
     /* video section */
 
+    .videos{
+        padding-top: 0;
+    }
+
     .video iframe{
         width: 290px;
     }
@@ -358,6 +362,7 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
+        row-gap: 15px;
     }
 
     /* sponsors */
@@ -366,6 +371,12 @@ footer{
         row-gap: 20px;
     }
     /* highlight */
+
+    .highlight-area{
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+
     .highlights{
         flex-direction: column;
         align-items: center;
