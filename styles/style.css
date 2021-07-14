@@ -323,6 +323,15 @@ footer{
     /* banner */
     .banner-area{
         flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome-text{
+        font-size: 30px;
+    }
+
+    .photo-area svg{
+        width: 300px;
     }
 
     /* .container {
@@ -338,9 +347,14 @@ footer{
     }
 
     /* video section */
+
+    .video iframe{
+        width: 290px;
+    }
     .video-container{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     /* sponsors */
@@ -352,18 +366,33 @@ footer{
     .highlights{
         flex-direction: column;
         align-items: center;
+        row-gap: 25px;
+    }
+
+    .photo-highlight img {
+        width: 290px;
+        height: 310px;
     }
 
     .text-highlight{
         width: 329px;
         height: 299px;
-        /* display: flex;
-        justify-content: center;
+        display: flex;
         flex-direction: column;
-        align-items: center; */
+        align-items: center;
     }
 
     .match-title{
         font-size: 30px;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo img{
+        width: 250px;
+        height: 80px;
     }
 }
