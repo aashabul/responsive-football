@@ -17,6 +17,10 @@ a{
     text-decoration: none;
     color: black;
 }
+
+.hidden{
+    display: none;
+}
 /* ------------------------------
     Navigation style
 ---------------------------------*/
@@ -295,3 +299,71 @@ footer{
     justify-content: center;
 }
 
+
+/* ------------------------------
+   Media Query
+---------------------------------*/
+@media only screen and (max-width: 688px){
+
+    /* header */
+    /* .menu-area{
+        display: none;
+    }
+    .hidden{
+        display: block;
+    }
+    nav{
+        justify-content: space-between;
+    }
+    header{
+        justify-content: center;
+        width: 750px;
+    } */
+
+    /* banner */
+    .banner-area{
+        flex-direction: column;
+    }
+
+    /* .container {
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+    } */
+
+    /* player section */
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 27px;
+    }
+
+    /* video section */
+    .video-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* sponsors */
+    .sponsor-list{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    /* highlight */
+    .highlights{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-highlight{
+        width: 329px;
+        height: 299px;
+        /* display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center; */
+    }
+
+    .match-title{
+        font-size: 30px;
+    }
+}
