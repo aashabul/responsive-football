@@ -304,30 +304,33 @@ footer{
    Media Query
 ---------------------------------*/
 @media only screen and (max-width: 688px){
-
     /* header */
-    /* .menu-area{
+    .menu-area{
         display: none;
     }
     .hidden{
         display: block;
     }
-    nav{
-        justify-content: space-between;
-    }
-    header{
-        justify-content: center;
-        width: 750px;
-    } */
 
+    /* navigation */
+    nav {
+        display: flex;
+        justify-content: center;
+        column-gap: 140px;
+    }
+    
     /* banner */
     .banner-area{
         flex-direction: column;
         align-items: center;
     }
 
-    .welcome-text{
-        font-size: 30px;
+    .text-area{
+        align-items: center;
+    }
+
+    .welcome-text h1{
+        font-size: 36px;
     }
 
     .photo-area svg{
